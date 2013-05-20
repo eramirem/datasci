@@ -1,0 +1,1 @@
+select count(*) from (select distinct(a.docid) from frequency a join frequency b on a.docid = b.docid where a.term='transactions' and b.term='world');
